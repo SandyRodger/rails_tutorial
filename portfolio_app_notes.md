@@ -26,7 +26,7 @@ bin/rails db:create db:migrate
 git add . && git commit -m "init portfolio app"
 ```
 
-## 3 geerate project model
+## 3 generate project model
 
 ```
 bin/rails generate model Project title:string slug:string short:text body:text tech:string year:integer repo_url:string demo_url:string featured:boolean
@@ -141,4 +141,32 @@ end
 
   <%= link_to "Back to projects", root_path %>
 </article>
+```
+
+## 6 Admin UI
+
+- use the new/edit controller views above and protect them with HTTP basic auth in ApplicationController or a very simple password:
+
+```app/controllers/application_controller.rb
+class ApplicationController < ActionController::Base
+  before_action :require_admin, if: -> { request.path.starts_with?("/projects/new") || request.path.match?("/projects/.*/edit") }
+
+  private
+
+  def require_admin
+    authenticate_or_request_with_http_basic do |user, pass|
+      user == ENV["ADMIN_USER"] && pass == ENV["ADMIN_PASS"]
+    end
+  end
+end
+```
+
+## 7 Make slugs easy
+
+```app/models/project.rb
+before_validation :set_slug, on: :create
+
+def set_slug
+  self.slug ||= title.to_s.parameterize
+end
 ```
