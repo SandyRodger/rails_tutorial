@@ -25,6 +25,26 @@ Things you may want to cover:
 
 ## Tutorial steps
 
+## [The roadmap](https://www.theodinproject.com/lessons/ruby-on-rails-how-this-course-will-work)
+
+- prepare for deployment & install rails
+- Overview of HTTP, MVC, REST, APIs, Cookies, Authentication
+- Move front to back:
+  - routing layer & views
+  - SQL: finding and storing data, active record queries
+  - Web-forms
+  - authentication
+- additional topics:
+  - sending emails from your app
+  - building & interfacing with APIs
+  - design patterns
+  - metaprogramming/advanced routing 
+
+## Tools:
+
+  - [rails guides](https://guides.rubyonrails.org)
+  - [rails API](https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html)
+  
 ### [Step 1.1: Install Rails](https://www.theodinproject.com/lessons/ruby-on-rails-installing-rails)
 
 - `gem install rails`
