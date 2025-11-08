@@ -1,24 +1,31 @@
 # [Rails Guide](https://guides.rubyonrails.org/getting_started.html)
 
-## [Introduction]()
-## [Rails Philosophy]()
-## [Creating a New Rails App]()
+## [Introduction](https://guides.rubyonrails.org/getting_started.html#introduction)
+## [Rails Philosophy](https://guides.rubyonrails.org/getting_started.html#rails-philosophy)
+## [Creating a New Rails App](https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-app)
 ## [Prerequisites]()
-## [Creating Your First Rails App]()
+## [Creating Your First Rails App](https://guides.rubyonrails.org/getting_started.html#creating-a-database-model)
 ## [Directory Structure]()
 ## [Model-View-Controller Basics]()
 ## [Hello, Rails!]()
 ## [Autoloading in Development]()
 ## [Creating a Database Model]()
-## [Database Migrations]()
-## [Running Migrations]()
+## [Database Migrations](https://guides.rubyonrails.org/getting_started.html#database-migrations)
+## [Running Migrations](https://guides.rubyonrails.org/getting_started.html#running-migrations )
 ## [Rails Console]()
-## [Active Record Model Basics]()
-## [Creating Records]()
-## [Querying Records]()
+## [Active Record Model Basics](https://guides.rubyonrails.org/getting_started.html#active-record-model-basics)
+## [Creating Records](https://guides.rubyonrails.org/getting_started.html#creating-records)
+`product = Product.new(name: "T-Shirt")`
+`product.save`
+
+## [Querying Records](https://guides.rubyonrails.org/getting_started.html#querying-records)
+
 ## [Filtering & Ordering Records]()
-## [Finding Records]()
-## [Updating Records]()
+## [Finding Records](https://guides.rubyonrails.org/getting_started.html#finding-records)
+
+
+
+## [Updating Records](https://guides.rubyonrails.org/getting_started.html#updating-records)
 ## [Deleting Records]()
 ## [Validations]()
 ## [A Request's Journey Through Rails]()
