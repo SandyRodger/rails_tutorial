@@ -125,7 +125,13 @@ Summary of debugging:
       - Symptom: `Cannot connect to the Docker daemon at unix:///Users/sandyboy/.docker/run/docker.sock`
       - Cause Docker desktop wasn't running
       - Fix: open Docker desktop
-      
+
+      [ ... then an infinite black hole of ChatGPT solutons, each promising to be the last one. I'm going to try human message boards ... ]
+
+- Google: `docker exit status: 32000`
+  - export KAMAL_REGISTRY_PASSWORD="********************" <- check KeePassXC
+    - source ~/.bashrc
+  
 ## [Adding a User to Production]()
 ## [Background Jobs using Solid Queue]()
 What's Next?
